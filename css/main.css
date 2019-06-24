@@ -1,0 +1,72 @@
+@keyframes lightning{
+	0%{color:#A0D4FF}
+	20%{color:#333}
+	40%{color:#FFF535}
+	50%{color:#333}
+	60%{color:#FFF535}
+	70%{color:#333}
+	100%{color:#A0D4FF}
+}
+
+@keyframes loading{
+	100%{
+		transform:rotate(360deg) 
+	}
+}
+
+@keyframes quick-pulse{
+	0%{
+		transform:scale(0);
+
+	}
+	75%{
+		transform:scale(2);
+	}
+	100%{
+		transform:scale(1);
+	}
+}
+.flex{
+	display:flex;
+	width:100%;
+	height:100%;
+	flex-flow:column nowrap;
+	align-items:center;
+}
+p{
+	width:33%;
+	color:#333;
+	text-align:left;
+}
+	
+.icon{
+	display:inline-block;
+	transform:blur(0);
+	font-size:2em;
+	vertical-align:middle;
+}
+
+.icon-lightning{
+	color:#A0D4FF;
+	animation:lightning 8s linear infinite;
+}
+
+.icon-cog{
+	animation:loading 1s linear infinite;
+}
+
+.icon-checkmark{
+	color:#0F7414;
+	animation:quick-pulse 1s ease infinite;
+}
+
+.icon-11-expand-dims {
+	/*font-size:1rem;*/
+    width: 3rem;
+    height: 3rem;
+    background-position:0 -30rem;
+    background-size:3rem 42rem;
+}
+
+
+
